@@ -1,0 +1,642 @@
+body{background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 65%;
+
+}
+
+:root{
+    background-color: black;
+}
+body>div{
+    width: 85%;
+
+}
+
+header>div{
+
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+figure{
+    margin-top: 40px;
+    transform:rotate(-15deg);
+    z-index: 2;
+}
+h2{
+    visibility: hidden;
+}
+h1{ padding-bottom: 10px;
+    font-family: sans-serif;
+
+ 
+}
+h3{
+    font-family: sans-serif;
+}
+
+#about>h3{
+    display: none;
+}
+#about{
+    font-weight: bold;
+    font-style: italic;
+    width: 55%;
+    position: absolute;
+    top: 68px;
+    border-top: 1px solid gray;
+
+}
+#about>p{
+    width:70%;
+    text-align: justify;
+}
+
+#competencies{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 18% 80%;
+    grid-template-rows: 1fr 1fr;
+    
+    grid-template-areas: 
+    "cra cri"
+    "cra cro";
+}
+#competencies>h3{
+   
+    grid-area: cra;
+    margin-top: 0px;
+    height: 100%;
+    width: auto;
+    border-right: 2px solid black;
+}
+.skills.skills-primary{
+
+    width: 80%;
+    align-content: center;
+    margin-bottom: 10px;
+    grid-area: cri;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.skills.skills-primary>[data-skill="5"]>span{
+    margin-left: 10px;
+    justify-content: space-between;
+    flex-basis: 33%;
+    display: flex;
+    padding: 8px;
+    color: white;
+    background-color: rgb(33, 118, 146);
+    height:80%;
+}
+.skills.skills-primary>[data-skill="5"]>span::after{
+content: "     * * *";
+color: white;
+font-size: 20px;
+}
+.skills.skills-primary>[data-skill="3"]>span{
+    margin-left: 10px;
+    justify-content: space-between;
+    flex-basis: 33%;
+    display: flex;
+    padding: 8px;
+    color: white;
+    background-color: rgb(33, 118, 146);
+    height:80%;
+}
+.skills.skills-primary>[data-skill="3"]>span::after{
+content: "      * *";
+color: white;
+font-size: 20px;
+}
+.skills.skills-primary>[data-skill="1"]>span{
+    margin-left: 10px;
+    justify-content: space-between;
+    flex-basis: 33%;
+    display: flex;
+    padding: 8px;
+    color: white;
+    background-color: rgb(33, 118, 146);
+    height:80%;
+}
+.skills.skills-primary>[data-skill="1"]>span::after{
+content: "       *";
+color: white;
+font-size: 20px;
+}
+
+
+
+.skills.skills-secondary{
+
+    width: 80%;
+    align-content: center;
+    grid-area: cro;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.skills.skills-secondary>[data-skill="5"]>span{
+    margin-left: 10px;
+    font-size: 10px;
+    justify-content: space-between;
+    flex-basis: 33%;
+    display: flex;
+    padding: 10px;
+    color: white;
+    background-color: rgb(33, 118, 146);
+    
+}
+.skills.skills-secondary>[data-skill="5"]>span::after{
+content: "      * * *";
+font-size: 5px;
+color: white;
+font-size: 20px;
+}
+.skills.skills-secondary>[data-skill="9"]>span{
+    margin-left: 10px;
+    font-size: 10px;
+    justify-content: space-between;
+    flex-basis: 33%;
+    display: flex;
+    padding: 10px;
+    color: white;
+    background-color: rgb(33, 118, 146);
+    
+}
+.skills.skills-secondary>[data-skill="9"]>span::after{
+content: "      * * * * *";
+font-size: 5px;
+color: white;
+font-size: 20px;
+}
+.skills.skills-secondary>[data-skill="7"]>span{
+    margin-left: 10px;
+    font-size: 10px;
+    justify-content: space-between;
+    flex-basis: 33%;
+    display: flex;
+    padding: 10px;
+    color: white;
+    background-color: rgb(33, 118, 146);
+    
+}
+.skills.skills-secondary>[data-skill="7"]>span::after{
+content: "       * * * *";
+size:5px;
+color: white;
+font-size: 20px;
+}
+
+
+#experiences{
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 18% 85%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "cra cri"
+    "cra cro";
+}
+#experiences>h3{
+    
+    grid-area: cra;
+    height: 100%;
+    width: auto;
+    border-right: 2px solid black;
+}    
+#experiences>div{
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns:80% 20%;
+    grid-template-rows: 35% 65%;
+    grid-template-areas:"cra cri"
+    "cro cro";
+    justify-content: space-between;
+}
+.experience>p{
+    align-self: flex-start;
+    grid-area: cro;
+    margin-top: 0px;
+
+    width:100%;
+}
+.experience-details{
+    align-self: center;
+    width: max-content;
+    margin-right: 0px;
+    
+    color: lightgrey;
+}
+.experience-institution{
+    visibility: hidden;
+}
+.experience-type{
+    color: rgb(33, 118, 146);
+}
+
+
+
+#education{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 18% 85%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "cra cri"
+    "cra cro";
+}
+#education>h3{
+
+    grid-area: cra;
+    height: 100%;
+    width: auto;
+    border-right: 2px solid black;
+}    
+#education>div{
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns:80% 20%;
+    grid-template-rows: 35% 65%;
+    grid-template-areas:"cra cri"
+    "cro cro";
+    justify-content: space-between;
+}
+.education>p{
+    align-self: flex-start;
+    grid-area: cro;
+    margin-top: 0px;
+
+    width:100%;
+}
+.experience-type{
+    font-family: sans-serif;
+}
+.education-details{
+    align-self: center;
+    width: max-content;
+    margin-right: 0px;
+    background-color: rgb(19, 59, 19);
+    color: lightgrey;
+}
+.education-institution{
+    visibility: hidden;
+}
+
+
+
+
+
+#hobbies{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 18% 85%;
+}
+#hobbies>h3{
+    
+    height: 100%;
+    width: auto;
+    border-right: 2px solid black;
+}    
+ul{
+    margin-top: 20px;
+    background-image: url("/public/images/email.png");
+}
+
+
+
+
+#contact>h3{
+    visibility: hidden;
+}
+h3{
+    font-style: italic;
+    
+
+}
+.contact.contact-email{
+    background-image: 
+    url("https://th.bing.com/th?q=Black+Email+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-XA&cc=LB&setlang=en&adlt=strict&t=1&mw=247");
+ width: 120px;
+ height: 120px;
+}
+.contact.contact-facebook{
+    background-image: 
+       url("https://th.bing.com/th?q=Facebook+Social+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-XA&cc=LB&setlang=en&adlt=strict&t=1&mw=247");
+    width: 120px;
+    height: 120px;
+}
+.contact.contact-github{
+    background-image: 
+    url("https://th.bing.com/th?q=GitHub+Icon+for+HTML&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-XA&cc=LB&setlang=en&adlt=strict&t=1&mw=247");
+ width: 120px;
+ height: 120px;
+}
+.contact.contact-phone{
+    background-image: 
+    url("https://th.bing.com/th?q=Business+Card+Phone+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-XA&cc=LB&setlang=en&adlt=strict&t=1&mw=247");
+ width: 120px;
+ height: 120px;
+}
+
+dd{
+    visibility: hidden;
+}
+dt{
+    visibility: hidden;
+}
+
+.contact.contact-skype{
+display: none;}
+#contact{
+    text-align: center;
+    margin: auto;
+
+    align-self: center;
+ 
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+@media(max-width:650px){
+  :root{
+   background-color:white;
+    
+  }
+  body{
+    width:100%;
+ 
+    margin-left:15px;
+  }
+    body>div{
+        width: 100%;
+      
+        
+    }
+  header>div{
+    text-align:center;
+  }
+    figure{
+        display: none;
+    }
+    
+    #about{
+        font-weight: bold;
+        font-style: italic;
+        margin:auto;
+        width: 100%;
+        top: 68px;
+        grid-area: headi;}
+    #about>p{
+            width:100%;
+            text-align:justify;
+        }    
+  #competencies{
+      display:flex;
+      flex-direction:column;
+      
+    }
+    #competencies>h3{
+
+        grid-area: cra;
+        margin-top: 0px;
+        height: 100%;
+        width: 40%;
+        border-right:1px;
+       border-bottom: 1px solid  black;
+    }
+    .skills.skills-primary{
+        
+        width: 100%;
+        align-content: center;
+        margin-bottom: 10px;
+        grid-area: cri;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .skills.skills-primary>[data-skill="5"]>span{
+        margin-left: 0px;
+        justify-content: space-between;
+        flex-basis: 33%;
+        display: flex;
+        padding: 8px;
+        color: white;
+        background-color: rgb(33, 118, 146);
+        height:50%;
+    }
+    .skills.skills-primary>[data-skill="5"]>span::after{
+    content: "     ***";
+    color: white;
+    font-size: 20px;
+    }
+    .skills.skills-primary>[data-skill="3"]>span{
+        margin-left: 10px;
+        justify-content: space-between;
+        flex-basis: 33%;
+        display: flex;
+        padding: 8px;
+        color: white;
+        background-color: rgb(33, 118, 146);
+        height:50%;
+    }
+    .skills.skills-primary>[data-skill="3"]>span::after{
+    content: "      **";
+    color: white;
+    font-size: 20px;
+    }
+    .skills.skills-primary>[data-skill="1"]>span{
+        margin-left: 10px;
+        justify-content: space-between;
+        flex-basis: 33%;
+        display: flex;
+        padding: 8px;
+        color: white;
+        background-color: rgb(33, 118, 146);
+        height:50%;
+    }
+    .skills.skills-primary>[data-skill="1"]>span::after{
+    content: "       *";
+    color: white;
+    font-size: 20px;
+    }
+    
+    
+    
+    .skills.skills-secondary{
+        
+        width: 100%;
+        align-content: center;
+        grid-area: cro;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+    .skills.skills-secondary>[data-skill="5"]>span{
+       margin-left: 10px;
+        justify-content: space-between;
+        flex-basis: 33%;
+        display: flex;
+        padding: 8px;
+        color: white;
+        background-color: rgb(33, 118, 146);
+        height:30%;
+        
+    }
+    .skills.skills-secondary>[data-skill="5"]>span::after{
+    content: " ***";
+    font-size: 5px;
+    color: white;
+    font-size: 20px;
+    }
+    .skills.skills-secondary>[data-skill="9"]>span{
+         margin-left: 0px;
+        justify-content: space-between;
+        flex-basis: 33%;
+        display: flex;
+        padding: 8px;
+        color: white;
+        background-color: rgb(33, 118, 146);
+        height:30%;
+        
+    }
+    .skills.skills-secondary>[data-skill="9"]>span::after{
+    content: "      *****";
+    font-size: 5px;
+    color: white;
+    font-size: 20px;
+    }
+    .skills.skills-secondary>[data-skill="7"]>span{
+        margin-left: 10px;
+        justify-content: space-between;
+        flex-basis: 33%;
+        display: flex;
+        padding: 8px;
+        color: white;
+        background-color: rgb(33, 118, 146);
+        height:30%;
+        
+    }
+    .skills.skills-secondary>[data-skill="7"]>span::after{
+    content: "       ****";
+    size:5px;
+    color: white;
+    font-size: 20px;
+    }
+    
+    #experiences{
+        
+        width: 100%;
+        grid-area: conta;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        grid-area: conti;
+        align-self: center;
+        }
+        #experiences>h3{
+            width: 40%;
+            grid-area: cra;
+            height: 100%;
+            border-right:1px;
+            border-bottom: 1px solid black;
+        }    
+        #experiences>div{
+            padding-left: 10px;
+            display: grid;
+            grid-template-columns:80% 20%;
+            grid-template-rows: 35% 65%;
+            grid-template-areas:"cra cri"
+            "cro cro";
+          justify-content:space-around;
+            grid-column-gap:0%;
+             
+            }
+        .experience>p{
+            align-self: flex-start;
+            grid-area: cro;
+            margin-top: 0px;
+        
+            width:100%;
+        }
+        .experience-details{
+            align-self: center;
+            width: max-content;
+            padding-right:10px;
+          
+            color: lightgrey;
+        }
+        .experience-institution{
+            visibility: hidden;
+        }
+        .experience-type{
+            color: rgb(33, 118, 146);
+        }
+            
+    #education{
+        
+        width: auto;
+       
+        width: 100%;
+        grid-area: conta;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        grid-area: heado;
+        }
+        #education>h3{
+             width: 40%;
+            grid-area: cra;
+            height: 100%;
+            border-right:1px;
+            border-bottom: 2px solid black;
+            
+        }
+    #hobbies{
+       
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        grid-area: conto;}
+  #hobbies>h3{
+        border-bottom: 1px solid black;
+        border-right:2px;
+        width: 40%;
+    }    
+    ul{
+       
+        margin-top: 5px;
+    }
+    #contact{
+      
+        width: 100%;
+        justify-content: center;
+        grid-area: fouto;}
+    .contacts{
+        width: 55%;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "hedo heda hedu"
+        "fouto . .";
+        grid-row-gap: 0px;
+        margin:auto;
+        
+       
+        
+    }   
+    .contact.contact-facebook{
+       grid-area: fouto;
+    } 
+ 
+     
+        
+}
