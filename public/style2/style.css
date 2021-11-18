@@ -93,7 +93,7 @@ h3{
     height:80%;
 }
 .skills.skills-primary>[data-skill="5"]>span::after{
-content: "     * * *";
+content: "  * * * * *";
 color: white;
 font-size: 20px;
 }
@@ -108,7 +108,7 @@ font-size: 20px;
     height:80%;
 }
 .skills.skills-primary>[data-skill="3"]>span::after{
-content: "      * *";
+content: "     * * * *";
 color: white;
 font-size: 20px;
 }
@@ -123,7 +123,7 @@ font-size: 20px;
     height:80%;
 }
 .skills.skills-primary>[data-skill="1"]>span::after{
-content: "       *";
+content: "      * * *";
 color: white;
 font-size: 20px;
 }
@@ -167,7 +167,7 @@ font-size: 20px;
     
 }
 .skills.skills-secondary>[data-skill="9"]>span::after{
-content: "      * * * * *";
+content: "       * * *";
 font-size: 5px;
 color: white;
 font-size: 20px;
@@ -184,7 +184,7 @@ font-size: 20px;
     
 }
 .skills.skills-secondary>[data-skill="7"]>span::after{
-content: "       * * * *";
+content: "        *";
 size:5px;
 color: white;
 font-size: 20px;
@@ -316,34 +316,9 @@ h3{
     
 
 }
-.contact.contact-email{
-    background-image: 
-    url("https://th.bing.com/th?q=Black+Email+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-XA&cc=LB&setlang=en&adlt=strict&t=1&mw=247");
- width: 120px;
- height: 120px;
-}
-.contact.contact-facebook{
-    background-image: 
-       url("https://th.bing.com/th?q=Facebook+Social+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-XA&cc=LB&setlang=en&adlt=strict&t=1&mw=247");
-    width: 120px;
-    height: 120px;
-}
-.contact.contact-github{
-    background-image: 
-    url("https://th.bing.com/th?q=GitHub+Icon+for+HTML&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-XA&cc=LB&setlang=en&adlt=strict&t=1&mw=247");
- width: 120px;
- height: 120px;
-}
-.contact.contact-phone{
-    background-image: 
-    url("https://th.bing.com/th?q=Business+Card+Phone+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-XA&cc=LB&setlang=en&adlt=strict&t=1&mw=247");
- width: 120px;
- height: 120px;
-}
 
-dd{
-    visibility: hidden;
-}
+
+
 dt{
     visibility: hidden;
 }
@@ -433,7 +408,7 @@ display: none;}
         height:50%;
     }
     .skills.skills-primary>[data-skill="5"]>span::after{
-    content: "     ***";
+    content: "     *****";
     color: white;
     font-size: 20px;
     }
@@ -448,7 +423,7 @@ display: none;}
         height:50%;
     }
     .skills.skills-primary>[data-skill="3"]>span::after{
-    content: "      **";
+    content: "      ****";
     color: white;
     font-size: 20px;
     }
@@ -463,7 +438,7 @@ display: none;}
         height:50%;
     }
     .skills.skills-primary>[data-skill="1"]>span::after{
-    content: "       *";
+    content: "       ***";
     color: white;
     font-size: 20px;
     }
@@ -508,7 +483,7 @@ display: none;}
         
     }
     .skills.skills-secondary>[data-skill="9"]>span::after{
-    content: "      *****";
+    content: "      ***";
     font-size: 5px;
     color: white;
     font-size: 20px;
@@ -525,7 +500,7 @@ display: none;}
         
     }
     .skills.skills-secondary>[data-skill="7"]>span::after{
-    content: "       ****";
+    content: "       *";
     size:5px;
     color: white;
     font-size: 20px;
