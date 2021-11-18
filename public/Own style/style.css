@@ -1,0 +1,247 @@
+
+.style{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    
+    margin: auto;
+
+}
+.one{
+   
+    flex-basis: 20%;
+    padding: 5px;
+    font-family: sans-serif;
+    border-right: darkcyan 2px solid;
+}
+.two{
+   
+    flex-basis: 80%;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+h3{
+    color: rgb(10, 128, 128);
+    border-bottom: rgb(10, 128, 128) 1px solid;
+}
+
+.image>img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.had2>img{
+    display: none;
+}
+.mail{
+    width: 50px;
+    height: 50px;
+}
+.tel{
+    width: 50px;
+    height: 50px;
+}
+.git{
+    width: 50px;
+    height: 50px;
+}
+.fb{
+    width: 50px;
+    height: 50px;
+}
+
+header{
+    background-color: darkcyan;
+    color: white;
+    padding-top: 0px;
+}
+h2{
+    border-bottom: 2px solid white;
+    width: 150px;
+}
+
+
+#competencies>h3{
+    border-bottom: 1px solid grey;
+}
+.skills.skills-primary::before{
+    content: "Main";
+}
+.skills.skills-secondary::before{
+    content: "Other";
+}
+
+.skillsskills-primary{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+}
+
+
+
+.skills.skills-primary>[data-skill="5"]{
+background-color: rgb(192, 184, 184);
+height: 30px;
+border-bottom: 2px solid white;
+display: flex;
+align-items: center;
+
+}
+.skills.skills-primary>[data-skill="3"]{
+    background-color: rgb(192, 184, 184);
+    height: 30px;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+
+}
+.skills.skills-primary>[data-skill="1"]{
+    background-color: rgb(192, 184, 184);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 8px solid white;
+
+}
+
+.skills.skills-primary>[data-skill="5"]>span{
+    width:95%;
+    background-color: red;
+    color: white;
+}
+.skills.skills-primary>[data-skill="3"]>span{
+    width: 90%;
+    background-color: red;
+    color: white;
+}
+.skills.skills-primary>[data-skill="1"]>span{
+    width: 60%;
+    background-color: red;
+    color: white;
+}
+
+
+
+.skillsskills-secondary{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+
+.skills.skills-secondary>[data-skill="9"]{
+background-color: rgb(192, 184, 184);
+height: 30px;
+border-bottom: 2px solid white;
+display: flex;
+align-items: center;
+
+}
+.skills.skills-secondary>[data-skill="5"]{
+    background-color: rgb(192, 184, 184);
+    height: 30px;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+
+}
+.skills.skills-secondary>[data-skill="7"]{
+    background-color: rgb(192, 184, 184);
+    height: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.skills.skills-secondary>[data-skill="9"]>span{
+    width:50%;
+    background-color: red;
+    color: white;
+}
+.skills.skills-secondary>[data-skill="5"]>span{
+    width: 50%;
+    background-color: red;
+    color: white;
+}
+.skills.skills-secondary>[data-skill="7"]>span{
+    width: 30%;
+    background-color: red;
+    color: white;
+}
+.experience-institution::before{
+    content:  " @ ";
+}
+.experience-location::before{
+    content: "in ";
+}
+.experience-type{
+    color: darkcyan;
+}
+.experience-institution{
+    color: darkcyan(196, 51, 51);
+}
+
+.experience-details{
+    color:  grey;
+    position: relative;
+    padding-top: 0px;
+
+    
+}
+
+.experience-date-separator{
+    color: darkcyan;
+    top: 0px;
+}
+
+
+
+
+@media(max-width:500px){
+    .style{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .had{
+        display: flex;
+        justify-content:space-around;
+    }
+    header>p{
+        text-align: justify;
+        padding: 5px;
+    }
+    .had2>img{
+        display: initial;
+        width: 150px;
+        height: 150px;
+    }
+    .one{
+        border-right: 0px;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 15px;
+        grid-template-areas:
+        "headi heada"
+        "fouti fouta";
+
+    }
+    .image{
+       display: none;
+    }
+   
+    .skills{
+        grid-area: headi;
+    }
+    .contacts{
+        grid-area: heada;
+    }
+    .languages{
+        grid-area: fouta;
+    }
+    .hobbies{
+        grid-area: fouti;
+    }
+}
